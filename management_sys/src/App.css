@@ -95,6 +95,7 @@ input[type="submit"] {
 
 label > #btnLogar {
   height: 2.4rem;
+  width: 23vw;
   margin-top: 1rem;
 }
 
@@ -108,7 +109,7 @@ input[type="submit"]:hover {
   color: #ffffff;
   width: 100%;
   font-size: 13px;
-  text-align: center;
+  text-align: end;
   cursor: pointer;
   margin-top: 0.9rem;
   transition: color 0.3s ease;
