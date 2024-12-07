@@ -1,0 +1,139 @@
+/* Estilo geral */
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+  
+  #container {
+    width: 50rem;
+    background-color: #1E2A38;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  #reader {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #3C4B58;
+  }
+  
+  #icon {
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  #Texto p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Corpo principal */
+  #main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Adiciona espaçamento consistente entre os elementos */
+  }
+  
+  #inp1,
+  #bancoInfo {
+    display: flex;
+    gap: 1rem; /* Espaço entre os campos */
+  }
+  
+  #inp1 input,
+  #bancoInfo input {
+    flex: 1; /* Garante que ambos os inputs tenham o mesmo tamanho */
+  }
+  
+  #main input[type="text"],
+  #main input[type="email"],
+  #main select {
+    width: 100%; /* Ocupa todo o espaço disponível */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2C3E50;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box; /* Garante que padding não quebre o layout */
+  }
+  
+  #main input::placeholder,
+  #main select {
+    color: #95A5A6;
+  }
+  
+  /* Rodapé */
+  #footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #footer button {
+    background-color: #2980B9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #footer button:hover {
+    background-color: #3498DB;
+  }
+  
+
+
+  /*-----------------SELECT------------------------------*/
+
+  #main select {
+    appearance: none; /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none; /* Remove o estilo padrão no WebKit (Safari, Chrome) */
+    -moz-appearance: none; /* Remove o estilo padrão no Firefox */
+    width: 100%; /* Preenche o espaço disponível */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2C3E50;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box; /* Garante que padding e bordas não quebrem o layout */
+    cursor: pointer;
+  }
+  
+  /* Estilo para o texto dos itens no select */
+  #main select option {
+    background-color: #1E2A38; /* Mesma cor de fundo do container */
+    color: #fff; /* Cor do texto das opções */
+  }
+  
+  /* Adiciona um ícone de seta customizado */
+  #main select {
+    background-image: url('../assets/caret-down-fill.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1rem;
+  }
+  
+  /* Adiciona um hover para interatividade */
+  #main select:hover {
+    background-color: #2C3E50; /* Cor de hover */
+  }
+  
+  /* Foco no select */
+  #main select:focus, #main input[type="text"]:focus,
+  #main input[type="email"]:focus {
+    border: 2px solid #aaaaaa; /* Destaque quando o campo é selecionado */
+  }

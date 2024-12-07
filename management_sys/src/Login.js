@@ -1,4 +1,3 @@
-
 import logo from './IMGS/logo-fsdown.png';
 import userIcon from './IMGS/icon-user.png';
 import passIcon from './IMGS/icon-padlock.png';
@@ -6,9 +5,9 @@ import Swal from 'sweetalert2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import './App.css';
+import './Login.css';
 
-const App = () => {
+const Login = () => {
 
   const handleForgotPassword = () => {
     // Implementar lógica de navegação para "Esqueceu a senha"
@@ -100,4 +99,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Login;
