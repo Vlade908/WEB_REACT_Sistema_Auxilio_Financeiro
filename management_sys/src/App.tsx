@@ -11,7 +11,7 @@ function App() {
     <>
       <h1>Hello World</h1>
       <Login/>
-      <BtnAbrir>
+      <BtnAbrir text="Cadastrar Fornecedor">
         <CadastroFornecedor text ='Cadastro Fornecedor'/>
       </BtnAbrir>
       

@@ -4,13 +4,16 @@ import './btn_Abrir_Modal.css'
 
 interface ChildrenProps{
     children: ReactNode;
+    text?: string;
 }
 
-export default function BtnAbrir({children}:ChildrenProps) {
+
+
+export default function BtnAbrir(props: ChildrenProps,{children}:ChildrenProps) {
     const [openModal,setOpenModal] = useState(false);
     return(
         <div >
-        <button id="btn" onClick={()=> setOpenModal(true)}>Abrir Modal</button>
+        <button id="btn" onClick={()=> setOpenModal(true)}>{props.text}</button>
         <Modal isOpen={openModal}>
         <div>
             {children}
