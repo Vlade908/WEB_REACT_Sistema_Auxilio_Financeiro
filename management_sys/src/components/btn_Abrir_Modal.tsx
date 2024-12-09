@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import Modal from "./modal";
-import { CadastroFornecedor } from "./CadastroFornecedor";
 
 
-export default function BtnAbrir() {
+interface ChildrenProps{
+    children: ReactNode;
+}
+
+export default function BtnAbrir({children}:ChildrenProps) {
     const [openModal,setOpenModal] = useState(false);
     return(
         <div>
         <button onClick={()=> setOpenModal(true)}>Abrir Modal</button>
         <Modal isOpen={openModal}>
-        <CadastroFornecedor/>
+        <div>
+            {children}
+        </div>
         </Modal>
         </div>
 

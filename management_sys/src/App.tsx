@@ -1,6 +1,6 @@
 import Login from "./Login"
+import { CadastroFornecedor } from "./components/CadastroFornecedor";
 import BtnAbrir from "./components/btn_Abrir_Modal";
-import { useState } from "react"
 
 
 
@@ -11,7 +11,9 @@ function App() {
     <>
       <h1>Hello World</h1>
       <Login/>
-      <BtnAbrir/>
+      <BtnAbrir>
+        <CadastroFornecedor text ='Cadastro Fornecedor'/>
+      </BtnAbrir>
       
       
       
