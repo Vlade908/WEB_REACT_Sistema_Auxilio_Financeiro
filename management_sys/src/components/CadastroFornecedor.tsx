@@ -1,10 +1,13 @@
-import { TiPlus } from "react-icons/ti";
+import { TiPlus, TiTimes } from "react-icons/ti";
 import "./CadastroFornecedor.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 type CadastroFornecedorProps = {
     text?: string;
+    onClose: () => void;
+
 }
 
 export function CadastroFornecedor(props: CadastroFornecedorProps){
@@ -14,11 +17,21 @@ export function CadastroFornecedor(props: CadastroFornecedorProps){
             <div id="body">
                 <div id="container">
                     <div id="reader">
-                        <div id="icon">
-                            <TiPlus size="32"/>
+                        <div id="capsula">
+                            <div id="icon">
+                                <TiPlus size="32"/>
+                            </div>
+                            <div id="Texto">
+                            <p>{props.text}</p>
+                            </div>
                         </div>
-                        <div id="Texto">
-                        <p>{props.text}</p>
+                        
+
+                        <div id="fecharBtn">
+                            <button id="fechadura" onClick={props.onClose} >
+                                <TiTimes size="32" color="white"/>
+                            </button>
+                            
                         </div>
 
                     </div>

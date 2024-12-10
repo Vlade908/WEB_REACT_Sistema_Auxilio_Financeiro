@@ -7,7 +7,8 @@ const BACKGROUND_STYLE: React.CSSProperties = {
     bottom:'0',
     left:'0',
     right:'0',
-    zIndex:'1000'
+    zIndex:'1000',
+    transition:'5s'
 }
 
 const MODAL_STYLE: React.CSSProperties = {
@@ -16,6 +17,8 @@ const MODAL_STYLE: React.CSSProperties = {
     left:'50%',
     transform:'translate(-50%,-50%)',
     padding:'150px',
+    transition:'5s'
+
     
 }
 
@@ -27,6 +30,7 @@ interface ModalProps {
 }
 
 export default function Modal({ isOpen, children }: ModalProps){
+    if(!isOpen) return null
 
     if(isOpen){
         return(
