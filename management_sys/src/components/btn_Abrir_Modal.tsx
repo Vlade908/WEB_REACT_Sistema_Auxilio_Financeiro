@@ -36,7 +36,7 @@ export default function BtnAbrir({tipo,text}:ChildrenProps) {
                 <>
                     <Modal isOpen={openModal}>
                         <div>
-                            <CadastroFornecedor text ='Cadastro Fornecedor' onClose={() => setOpenModal(false)}/>
+                            <CadastroFornecedor text ='Cadastro Fornecedor' onClose={() => setOpenModal(false)} /*o onclose serve para fazer o popup fechar*//>
                         </div>
                     </Modal>
                 </>

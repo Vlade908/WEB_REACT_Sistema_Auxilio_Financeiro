@@ -10,11 +10,13 @@ type CadastroFornecedorProps = {
 
 }
 
+
 export function CadastroFornecedor(props: CadastroFornecedorProps){
     
     return(
         <>
             <div id="body">
+                
                 <div id="container">
                     <div id="reader">
                         <div id="capsula">
