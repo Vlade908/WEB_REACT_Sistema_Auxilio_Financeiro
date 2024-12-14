@@ -2,6 +2,8 @@ import { ReactNode, useState } from "react";
 import Modal from "./modal";
 import './btn_Abrir_Modal.css'
 import { CadastroFornecedor } from "./CadastroFornecedor";
+import { TwoStepCadastroFornecedor } from "./SupplierRegistration_2";
+
 
 interface ChildrenProps{
     children?: ReactNode;
@@ -47,7 +49,9 @@ export default function BtnAbrir({tipo,text}:ChildrenProps) {
                 return (
                     <Modal isOpen={openModal}>
                         <div>
-                            
+                            <TwoStepCadastroFornecedor text="Cadstro Dornecedor" onClose={() =>setOpenModal (false) 
+
+                             }></TwoStepCadastroFornecedor>
                             <p>Este é o modal do tipo 2</p>
                         </div>
                     </Modal>
