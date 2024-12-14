@@ -10,12 +10,7 @@ function App() {
   return (
     <>
       <Login/>
-      <BtnAbrir tipo={1} >
-        
-      </BtnAbrir>
-      
-      
-      
+      <BtnAbrir tipo={1} />
 
     </>
   )

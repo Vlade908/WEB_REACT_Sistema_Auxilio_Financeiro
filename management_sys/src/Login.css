@@ -8,16 +8,27 @@ body, html {
 
 /* Container principal */
 #conatainer-Login {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url("./assets/wallpaper2.jpg");
+    background: url("./assets/wallpaper.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+}
+
+#conatainer-Login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.808); /* Sobreposição escura */
+    z-index: 1;
 }
 
 /* Card principal */
@@ -29,6 +40,7 @@ body, html {
     text-align: center;
     width: 100%;
     max-width: 400px;
+    z-index: 2;
 }
 
 /* Header */
