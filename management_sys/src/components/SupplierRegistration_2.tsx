@@ -145,8 +145,8 @@ export function TwoStepCadastroFornecedor(props: TwoStepCadastroFornecedorProps)
               </select>
 
               <div id="footer">
-                <button type="button" onClick={nextStep}>
-                  Próximo
+                <button type="submit" onClick={nextStep}>
+                  Salvar
                 </button>
               </div>
             </div>
